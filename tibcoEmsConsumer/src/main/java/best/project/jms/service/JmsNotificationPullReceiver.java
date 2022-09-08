@@ -15,7 +15,7 @@ public class JmsNotificationPullReceiver implements NotificationReceiver {
 	}
 
 	@Override
-	public Notification receiveOrder() {
+	public Notification receiveNotification() {
 		return (Notification) jms.receiveAndConvert();
 	}
 

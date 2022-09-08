@@ -4,6 +4,6 @@ import best.project.jms.model.Notification;
 
 public interface NotificationReceiver {
 
-	Notification receiveOrder();
+	Notification receiveNotification();
 
 }

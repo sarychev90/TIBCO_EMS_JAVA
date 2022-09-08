@@ -29,7 +29,7 @@ public class NotificationController {
 	@GetMapping(consumes = "application/json")
 	@ResponseStatus(code = HttpStatus.OK)
 	public Notification getNotification() {
-		Notification notification = messageService.receiveOrder();
+		Notification notification = messageService.receiveNotification();
 		LOG.log(Level.INFO, notification.toString());
 		return notification;
 	}
